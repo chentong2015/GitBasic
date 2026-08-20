@@ -1,0 +1,5 @@
+Git pre-commit Hook
+提交前执行验证的钩子，放置在hooks目录中的程序，在git执行时触发操作
+
+强制提交: 跳过Hook验证(不执行tslint检查.ts文件, 不检测.html格式文件)
+> git commit --no-verify -m "msg"

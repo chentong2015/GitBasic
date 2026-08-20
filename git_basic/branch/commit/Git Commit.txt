@@ -1,16 +1,9 @@
 > git add -u 添加所有的updates files到暂存区(其中的改变将会在下一次的提交中添加)
 > git add -A 添加所有的文件，包括没有追踪的文件
 > git add .  添加当前分支所有被追踪的文件
-
 > git commit -am "..." 将add和commit合为一步
 
-TODO. 修正提交的Commit信息
+// 修正提交的Commit信息
 > git commit -m "..."  提交暂存区的数据到本地仓库
 > git commit --amend -m 'xxx' 合并上一次提交(用于反复修改)
 > git commit --amend 修正上一次提交的message信息
-
-TODO. Git Hooks 提交验证
- Commit时会默认运行pre-commit和commit-msg钩子
- 钩子是放置在hooks目录中的程序，在git执行时触发操作
---no-verify 强制提交: 跳过tslint检查.ts文件, 不会检测.html格式的文件
-> git commit -m "msg" --no-verify
