@@ -1,3 +1,0 @@
-TODO：Github仓库的Pull和Push需要身份认证, 否则无法修改Repository
-remote: Permission to test2023victor/ProjectA.git denied to chentong2015.
-fatal: unable to access 'https://**/ProjectA.git/': The requested URL returned error: 403

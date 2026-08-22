@@ -1,11 +1,13 @@
-TODO. Github提供两种基于HTTP认证的方式
-通过页面用户登录并授权认证(确保特定用户)
+TODO. 基于HTTP认证
+1. 通过页面用户登录并授权认证(确保特定用户)
 > git config --global credential.useHttpPath true
 
-使用API-Token替代Password进行认证(Token必须由用户生成)
+2. 使用API-Token替代Password进行认证(Token必须由用户生成)
 > git clone https://github.com/chentong2015/JavaMasterClass.git
   Username for 'https: //github.com': chentong2015
   Password for 'https://chentong2015@github.com': API-Token
 
-TODO. 将API-Token设置到远程REPO
-> git remote set-url origin https://API-Token@github.com/chentong2015/project-name.git
+TODO. 将API-Token设置到Remote: 不推荐 !!
+1. Token会进入.git/config文件中(默认不提交到Github)
+2. git remote -v会显示设置的Token(造成泄漏)
+> git remote set-url origin https://API-Token@github.com/test2023victor/project-name.git

@@ -1,6 +1,5 @@
-TODO. Github支持基于SSH认证: 生成公钥和私钥对(本地存储)
-- Public Key提供到GitHub
-- Private Key用户本地保存
+TODO. 基于SSH认证: Private Key本地保存, Public Key提供到GitHub
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 > ssh-keygen -t rsa -C "xxx@gmail.com"
 > cd ~/.ssh/
@@ -10,4 +9,5 @@ TODO. Github支持基于SSH认证: 生成公钥和私钥对(本地存储)
 > ssh git@github.com
   /Users/tongchen/.ssh/known_hosts
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+TODO. 支持多账户SSH认证: 生产多个SSH Key
+
