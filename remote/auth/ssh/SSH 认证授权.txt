@@ -33,3 +33,7 @@ Host github-victor
   User git
   IdentityFile ~/.ssh/id_ed25519_victor
   IdentitiesOnly yes
+
+TODO. 设置远程REPO使用SSH认证方式
+> git clone git@github-victor:username/my-project.git
+> git remote set-url origin git@github-victor:username/my-project.git
