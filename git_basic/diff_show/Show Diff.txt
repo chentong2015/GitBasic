@@ -1,3 +1,4 @@
+TODO. Diff查看不同版本的不同
 > git diff               显示未添加至Stage的变更(还未add的变更)
 > git diff --cached      比较已添加Stage但还未commit的变更
 > git diff --cached      比较暂存区Stage和Repo仓库的区别

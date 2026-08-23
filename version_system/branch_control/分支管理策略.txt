@@ -1,3 +1,0 @@
-TODO. Bad Practices
-- 所有的defect历史分支不删除，存在大量的历史分支
-- 项目的所有版本(Dev, Feature, Master, Release, Archive)版本放在一个Repo里面

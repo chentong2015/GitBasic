@@ -1,0 +1,23 @@
+TODO: 项目.git目录
+> ls -la .git
+.git/objects	        真正保存Git对象
+.git/objects/...	    commit/tree/blob/tag的内容
+.git/refs/heads/	    本地分支指向哪个commit
+.git/refs/tags/	        tag指向哪个对象
+.git/HEAD	            当前HEAD指向哪里
+.git/logs/HEAD	        HEAD曾经指向过什么
+.git/logs/refs/heads/	某个分支曾经指向过什么
+.git/packed-refs	    被打包存储的refs
+
+提交Commit存储的到底是什么 ?
+> git cat-file -p <commit-id>
+> git cat-file -p HEAD
+  tree dbe9e08...       提交对应整个文件目录的快照
+  parent 991b2252....   上一个commit, 用于计算变更
+  author xxx <xxx@gmail.com> 1787418901 +0200
+  committer xxx <xxx@gmail.com> 1787418957 +0200
+  Commit Message
+
+标签名称和目录名冲突
+"error: cannot lock ref 'refs/tags/v2.8': 'refs/tags' exists"
+> git update-ref -d refs/tags

@@ -5,3 +5,7 @@ TODO. 取消文件(或目录)的版本追踪
 
 > git rm example.txt 删除index中文件
 > git rm -r *        递归删除
+
+TODO. Remove untracked files from the working tree
+> git clean -n
+> git clean -f  移除掉新添加的，没有追踪的文件

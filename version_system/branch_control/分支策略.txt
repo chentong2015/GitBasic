@@ -1,0 +1,4 @@
+TODO. Bad Practice:
+- 每个Defect创建的分支名称不规范，只包含DefectID
+- 所有Defect历史分支不删除，存在大量历史分支
+- 所有版本版本放在一个Repo里面(Dev, Feature, Master, Release, Archive)

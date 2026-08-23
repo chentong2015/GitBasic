@@ -1,0 +1,20 @@
+Git Vim Editor > Ctrl+C + :wq 保存并退出
+
+> git command --help                           # 自动打开本地文档
+> git ls-files                                 # 列出index暂存区包含的文件
+> git revert dfb02e6e4f                        # 撤销提交dfb02e6e4f
+> git ls-tree HEAD                             # 内部命令：显示某个git对象
+> git rev-parse v2.0                           # 内部命令：显示某个ref对于的SHA1 HASH
+> git grep "delete from"                       # 文件中搜索文本“delete from”
+> git grep -e '#define' --and -e SORT_DIRENT
+> git gc                                       # 执行清空操作，删除悬空分支
+> git fsck                                     # file system check 文件系统检查
+> git fsck --lost-found                        # 列出"悬空"的提交(dangling commit)
+
+TODO. GIT进阶教程
+Git ProBook: https://git-scm.com/book/zh/v2
+Git Commands: https://devtut.github.io/git/
+
+https://www.youtube.com/watch?v=PN1k1CLXtlw
+https://juejin.cn/post/7021023267028729887
+https://dev.to/gauri1504/mastering-version-control-with-git-beyond-the-basics-44ib

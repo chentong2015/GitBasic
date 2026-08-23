@@ -1,0 +1,20 @@
+TODO. 显示某个特定Commit提交的变更
+Git根据commit对象 + tree/blob对象 + parent commit动态计算
+
+> git show HEAD     显示HEAD提交日志(最新一次提交信息)
+> git show HEAD^    显示HEAD的父版本提交日志
+> git show dfb02*** 显示某个提交的详细内容
+> git show dfb02    可只用commitid的前几位
+
+> git show dfb02e6e4                  # 显示某个提交的详细内容
+> git show dfb02                      # 可只用commitid的前几位
+> git show HEAD                       # 显示HEAD提交日志
+> git show HEAD^                      # 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本
+> git show HEAD@{5}
+> git show master@{yesterday}         # 显示master分支昨天的状态
+> git show HEAD~3
+
+> git show -s --pretty=raw 2be7fcb476
+> git show v2.0                       # 显示v2.0的日志及详细内容
+> git show-branch                     # 图示当前分支历史
+> git show-branch --all               # 图示所有分支历史
