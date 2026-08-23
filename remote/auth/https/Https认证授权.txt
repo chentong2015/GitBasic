@@ -1,4 +1,4 @@
-TODO. 基于HTTP认证
+TODO. 基于HTTPS认证
 1. 通过页面用户登录并授权认证(确保特定用户)
 > git config --global credential.useHttpPath true
 
@@ -9,5 +9,11 @@ TODO. 基于HTTP认证
 
 TODO. 将API-Token设置到Remote: 不推荐 !!
 1. Token会进入.git/config文件中(默认不提交到Github)
-2. git remote -v会显示设置的Token(造成泄漏)
-> git remote set-url origin https://API-Token@github.com/test2023victor/project-name.git
+2. 显示设置的Token(造成泄漏)
+> git remote -v
+> git remote set-url origin https://API-Token@github.com/username/project-name.git
+
+
+Git使用Keychain管理历史HTTPS凭证: 系统级配置
+> git config --show-origin --get-all credential.helper
+file:.../git-core/gitconfig  osxkeychain

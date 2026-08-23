@@ -1,10 +1,8 @@
-TODO. Git配置的层级
+TODO. Git配置的层级: 可以只使用Global和Local配置
 System	/etc/gitconfig	    整台电脑上所有用户
 Global	~/.gitconfig	    当前用户的所有Git仓库
 Local	Project/.git/config	仅当前项目仓库
 
-如果没有设置系统层级, 在没有文件被创建
-Git完全可以没有System配置，只使用Global和Local配置
-
+如果没有设置系统层级则没有文件被创建
 > git config --system --list --show-origin
 fatal: unable to read config file '/etc/gitconfig': No such file or directory
