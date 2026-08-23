@@ -1,13 +1,35 @@
 TODO. 基于SSH认证: Private Key本地保存, Public Key提供到GitHub
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
-> ssh-keygen -t rsa -C "xxx@gmail.com"
+> ssh-keygen -t ed25519 -C "test2023victor"
+> ssh-keygen -t rsa -C "xxx2015@gmail.com"
 > cd ~/.ssh/
 > ls -l
-  /Users/tongchen/.ssh/id_rsa
-  /Users/tongchen/.ssh/id_rsa.pub
+  ~/.ssh/id_rsa
+  ~/.ssh/id_rsa.pub
 > ssh git@github.com
-  /Users/tongchen/.ssh/known_hosts
+  Hi xxx2015! You've successfully authenticated
 
-TODO. 支持多账户SSH认证: 生产多个SSH Key
+TODO. 测试多SSH KEY认证不同REPO
+~/.ssh/
+├── id_rsa
+├── id_rsa.pub
+│
+├── id_ed25519_victor
+├── id_ed25519_victor.pub
+│
+├── known_hosts
+└── known_hosts.old
 
+> nano ~/.ssh/config
+Host github-chentong
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+Host github-victor
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_victor
+  IdentitiesOnly yes
