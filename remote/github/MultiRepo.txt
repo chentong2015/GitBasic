@@ -1,0 +1,14 @@
+Git原生支持的remote配置不同fetch和push地址
+> git remote set-url origin git@github.com:company/project.git
+> git remote set-url --push origin git@github.com:myname/project.git
+
+> git remote -v
+origin  git@github.com:company/project.git (fetch)
+origin  git@github.com:myname/project.git (push)
+
+从company/project拉取变更
+> git fetch origin
+> git pull origin main
+
+将变更推送到myname/project
+> git push origin main

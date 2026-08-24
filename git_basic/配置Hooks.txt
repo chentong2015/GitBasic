@@ -3,3 +3,7 @@ Git pre-commit Hook
 
 强制提交: 跳过Hook验证(不执行tslint检查.ts文件, 不检测.html格式文件)
 > git commit --no-verify -m "msg"
+
+
+https://github.com/gitleaks/gitleaks
+https://pre-commit.com/#install

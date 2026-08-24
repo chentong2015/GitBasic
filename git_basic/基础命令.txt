@@ -11,7 +11,6 @@ Git Vim Editor > Ctrl+C + :wq 保存并退出
 > git fsck                                     # file system check 文件系统检查
 > git fsck --lost-found                        # 列出"悬空"的提交(dangling commit)
 
-TODO. GIT进阶教程
 Git ProBook: https://git-scm.com/book/zh/v2
 Git Commands: https://devtut.github.io/git/
 
