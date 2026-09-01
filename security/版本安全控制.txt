@@ -2,22 +2,17 @@ TODO. 只要真实密码被提交过，则认为它已经泄露 !!
 Git会记录历史文件变更和修改数据，只要提交过则必定出现来历史记录中
 Git通过.git目录保存变更过程，通过查询log可以找到文件的变更过程
 
-查看特定文件历史Commit变更
-> git log --all -- security/.config
+> git log --all -- security/.config  查看特定文件所有变更
+> git show <commit-id>:security/.config 查看特定文件某个Commit变更
 
-查看特定文件某次Commit修改
-> git show <commit-id>:security/.config
-
-
-TODO. 彻底修改历史版本中的Password数据
-从所有Git历史中删除.config
+TODO. 彻底修改历史版本中数据
+1. 从所有Git历史中删除.config
 > git filter-repo --sensitive-data-removal --invert-paths --path security/.config
 
-创建特定文件，替换之前的密码
+2. 创建特定文件，替换之前的密码
 > nano /tmp/passwords.txt
   abc123==>***REMOVED***
 > git filter-repo --sensitive-data-removal --replace-text /tmp/passwords.txt
-
 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html
