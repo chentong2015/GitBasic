@@ -5,7 +5,7 @@ Git通过.git目录保存变更过程，通过查询log可以找到文件的变�
 > git log --all -- security/.config  查看特定文件所有变更
 > git show <commit-id>:security/.config 查看特定文件某个Commit变更
 
-TODO. 彻底修改历史版本中数据
+TODO. 彻底修改历史版本数据
 1. 从所有Git历史中删除.config
 > git filter-repo --sensitive-data-removal --invert-paths --path security/.config
 
