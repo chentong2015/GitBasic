@@ -17,6 +17,7 @@ Token可能在Remote URL显示(造成泄漏)
 TODO. Git可使用Keychain管理历史HTTPS凭证
 > git config --list
   credential.helper=osxkeychain
+
 > git config --show-origin --get-all credential.helper
   file:.../git-core/gitconfig  osxkeychain
   [credential]
