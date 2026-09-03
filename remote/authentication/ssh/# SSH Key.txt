@@ -1,0 +1,5 @@
+> ssh-keygen -t ed25519 -C "your_email@example.com" / "employee_ID"
+> Enter file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
+
+将SSH密钥添加到ssh-agent, 用于密钥的管理
+添加Public Key公钥到Github, Bitbucket权限管理

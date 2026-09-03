@@ -1,0 +1,9 @@
+TODO. 不创建.ssh/config文件配置
+连接SSH时使用特定KEY
+> ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -T git@bitbucket.org
+> ssh -i ~/.ssh/id_ed25519_github -o IdentitiesOnly=yes -T git@github.com
+
+指定Repo认证时特定KEY
+> git remote set-url origin git@github.com:username/repo-project.git
+> git config core.sshCommand "ssh -i ~/.ssh/id_ed25519_github -o IdentitiesOnly=yes"
+> git config --get core.sshCommand

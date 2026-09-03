@@ -1,0 +1,19 @@
+TODO. 创建Github平台多账户认证
+Host github-2015
+    HostName github.com
+    User Username2015
+    IdentityFile ~/.ssh/id_ed25519-2015
+    IdentitiesOnly yes
+
+Host github-2016
+    HostName github.com
+    User Username2016
+    IdentityFile ~/.ssh/id_ed25519-2016
+    IdentitiesOnly yes
+
+> ssh -T git@github.com     多账户无法直接访问
+> ssh -T git@mapping-2016   必须使用映射名称
+> ssh -T git@mapping-2016
+
+> git remote set-url origin git@github-2015:username/repo-project.git
+> git remote set-url origin git@github-2016:username/repo-project.git

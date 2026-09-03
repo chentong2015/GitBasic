@@ -1,0 +1,18 @@
+TODO. 创建.ssh/config文件配置不同平台映射
+Host bitbucket.org
+    HostName bitbucket.org
+    User Username
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+Host github.com
+    HostName github.com
+    User Username
+    IdentityFile ~/.ssh/id_ed25519_github
+    IdentitiesOnly yes
+
+> ssh -T git@bitbucket.org
+> ssh -T git@github.com
+
+> git remote set-url origin git@github-2015:username/repo-project.git
+> git remote set-url origin git@github-2016:username/repo-project.git
