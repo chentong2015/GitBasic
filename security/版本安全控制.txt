@@ -1,10 +1,6 @@
 TODO. 只要真实密码被提交过，则认为它已经泄露 !!
-Git会记录历史文件变更和修改数据，只要提交过则必定出现来历史记录中
-Git通过.git目录保存变更过程，通过查询log可以找到文件的变更过程
-
-> git log --all -- security/.config  查看特定文件所有变更
-> git show <commit-id>:security/.config 查看特定文件某个Commit变更
-
+Git记录历史文件变更和修改，只要提交过则必定出现来历史记录中
+Git通过.git目录保存变更过程，通过log找到文件的变更过程
 
 TODO. 彻底修改历史版本数据
 1. 从所有Git历史中删除.config

@@ -12,4 +12,4 @@
 > git shortlog -sne Summary, Number of commit, Email 按照统计提交的次数来显示
 
 > git reflog   显示HEAD所在的reference的所有记录，用于找回之前的信息
-> git log --pretty=format:'%h %s' --graph     # 图示提交日志
+> git log --pretty=format:'%h %s' --graph  图示提交日志

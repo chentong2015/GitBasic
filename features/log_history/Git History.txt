@@ -1,0 +1,8 @@
+找出某文件的所有历史变更, 输出到文件
+> git log --all -- security/.config
+> git log --all -- file >> changelog.txt
+
+查看历史变更中某个CommitID
+> git show <commit-id>:security/.config
+
+或通过IDEA UI搜索某个特定CommitID
