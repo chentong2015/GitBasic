@@ -1,7 +1,0 @@
-BitBucket面向企业项目开发
-https://www.atlassian.com/git/tutorials
-
-BitBucket通过SSH Key来验证用户(员工账号)
-1. 使用员工的账号邮件来生成keys密钥对
-2. 通过员工登录Bitbucket的权限来添加SSH Keys公钥
-3. Clone并Push到执行的Repo仓库

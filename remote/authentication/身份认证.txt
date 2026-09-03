@@ -1,0 +1,6 @@
+GitHub用户身份认证
+https://docs.github.com/zh/authentication
+
+BitBucket通过SSH Key来验证用户(员工账号)
+1. 使用员工的账号邮件来生成keys密钥对
+2. 通过员工登录Bitbucket的权限来添加SSH Keys公钥

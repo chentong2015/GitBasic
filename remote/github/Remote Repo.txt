@@ -1,3 +1,7 @@
+开源Repo仓库允许clone和fork
+- Fork creates a completely independent copy of Git repository.
+- Clone creates a linked copy that will continue to synchronize with the target repository.
+
 > git remote 显示远端的名称
 > git remote -v 显示链接的远端仓库
 > git remote rm origin 移除远端的仓库
