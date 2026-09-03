@@ -1,0 +1,6 @@
+用户身份认证
+https://docs.github.com/zh/authentication
+
+TODO. 开源Repo仓库允许clone和fork
+- Fork creates a completely independent copy of Git repository.
+- Clone creates a linked copy that will continue to synchronize with the target repository.
