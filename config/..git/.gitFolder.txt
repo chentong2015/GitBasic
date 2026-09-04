@@ -1,4 +1,4 @@
-TODO: 项目.git目录
+TODO: 项目创建的.git目录如何控制版本 ?
 > ls -la .git
 .git/objects	        真正保存Git对象
 .git/objects/...	    commit/tree/blob/tag的内容

@@ -1,4 +1,4 @@
-TODO. 创建.ssh/config文件配置不同平台映射
+TODO. .ssh/config配置文件映射不同平台
 Host github.com
     HostName github.com
     User Username
