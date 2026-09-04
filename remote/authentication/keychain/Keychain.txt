@@ -1,0 +1,22 @@
+TODO. Github或通过Keychain历史凭证来认证
+Github Keychain认证流程
+	Git remote = https://github.com/...
+        ↓
+	credential.helper = osxkeychain
+        ↓
+	Keychain has github.com / class=inet
+        ↓
+	git push OK
+
+显示凭证助手
+> git config --list
+  credential.helper=osxkeychain
+
+> git config --show-origin --get-all credential.helper
+  file:.../git-core/gitconfig  osxkeychain
+  [credential]
+  	helper = osxkeychain
+  [init]
+  	defaultBranch = main
+
+真正Keychain数据存储在OS特定文件(login.keychain-db)

@@ -1,0 +1,9 @@
+TODO. 基于用户名和密码来认证(废弃直接使用密码)
+> git push origin main
+  Username for 'https://github.com/username/project.git': username
+  Password for 'https://github.com/username/project.git': API-Token
+
+> git remote set-url origin https://API-Token@github.com/username/project.git
+> git remote -v
+
+不推荐使用User Token认证
